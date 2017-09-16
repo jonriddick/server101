@@ -40,3 +40,14 @@ server2.listen(PORT2, function() {
   console.log("You are listening on port 7500, even better job!", PORT2);
 
 });
+
+////////////////////////////////////////////////////
+var PORT3 = 7700;
+
+http
+	.createServer(function(request, response){
+		response.end("This is the different one")
+	})
+	.listen(PORT3, function(){
+		console.log(`You're solid! ${PORT3}`)
+	})
